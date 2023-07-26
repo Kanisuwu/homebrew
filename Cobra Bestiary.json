@@ -1,0 +1,227 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Cobra Bestiary",
+				"abbreviation": "CoB",
+				"full": "Cobra Bestiary",
+				"authors": [
+					"Kanisu"
+				],
+				"version": "1.0",
+				"convertedBy": [
+					"Kanisu"
+				]
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0,
+		"_dateLastModifiedHash": "62820529fa"
+	},
+    "monster": [
+        {
+            "name": "Thunderjaw",
+            "source": "CoB",
+            "page": 1,
+            "size": [
+                "G"
+            ],
+            "type": {
+                "type": "construct",
+                "tags": [
+                    "Ekiros"
+                ]
+            },
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                17
+            ],
+            "hp": {
+                "formula": "17d20 + 119",
+                "average": 300
+            },
+            "speed": {
+                "walk": 50
+            },
+            "str": 27,
+            "dex": 12,
+            "con": 24,
+            "int": 8,
+            "wis": 15,
+            "cha": 1,
+            "save": {
+                "str": "+14",
+                "con": "+13",
+                "wis": "+8"
+            },
+            "passive": 18,
+            "resist": [
+                {
+                    "resist": [
+                        {
+                            "special": "Physical"
+                        }
+                    ]
+                }
+            ],
+            "immune": [
+                "poison",
+                "psychic"
+            ],
+            "conditionImmune": [
+                {
+                    "conditionImmune": [
+                        "charmed",
+                        "frightened",
+                        "poisoned"
+                    ]
+                }
+            ],
+            "cr": "18",
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The Thunderjaw makes two attacks: one with bite and one with tail, or two cannon bursts. It cannot make these on the same target."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 14} to hit, reach 15ft., one target. Hit 34 ({@damage 4d12 + 8}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Cannon Burst",
+                    "entries": [
+                        "{@atk rw} {@hit 7} to hit, reach 40ft, one target. Hit 18 ({@damage 4d8}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Disc Launcher",
+                    "entries": [
+                        "Two small drones soar throw the air and shoot projectiles. Each creature within one of 10-foot-square must make a {@dc 18} Dexterity saving throw, taking 28 ({@damage 8d6}) fire damage on a failed save, or half as much on a successful one.",
+                        "Alternatively, the Thunderjaw can shoot several drones around it. Each creature within the 30-foot-radius around the Thunderjaw must make a {@dc 18} Dexterity saving throw, taking 17 ({@damage 5d6}) fire damage on a failed save, or half as much on a successful one."
+                    ]
+                },
+                {
+                    "name": "Scan {@recharge 5}",
+                    "entries": [
+                        "The Thunderjaw can use Radar to detect and locate all creatures within 90 feet during its turn."
+                    ]
+                },
+                {
+                    "name": "Laser Sweep {@recharge 5}",
+                    "entries": [
+                        "The Thunderjaw charges its cannon and release many golden energy beams in a fan pattern. Each creature within a 20-foot-cone must make a {@dc 18} Dexterity saving throw, taking 54 ({@damage 12d8}) force damage on a failed save, or half as much on a successful one."
+                    ]
+                },
+                {
+                    "name": "Stomp",
+                    "entries": [
+                        "The Thunderjaw hits the ground with a powerful foot stomp. Each creature within 20 feet of it must make a {@dc 24} Strenght saving throw, taking 22 ({@damage 3d8 + 8}) bludgeoning damage and knocked {@condition prone} on a failed save."
+                    ]
+                },
+                {
+                    "name": "Tail",
+                    "entries": [
+                        "{@atk mw} {@hit 7} to hit, reach 20ft., one target. Hit 26 ({@damage 4d8 + 8}) bludgeoning damage.",
+                        "Otherwise, the Thunderjaw can swipe its tail against all creatures in a 15-foot-cone. Each creature in that area must make a {@dc 17} Dexterity saving throw, taking 15 ({@damage 2d8 + 8}) bludgeoning damage on a failed save, or half as much on a successful one."
+                    ]
+                },
+                {
+                    "name": "Bite Rush",
+                    "entries": [
+                        "Immediatly after The Thunderjaw takes the {@action dash} action and moved at least 20 feet, it can cut everything in it's path. Any creature in this area must make a {@dc 24} Dexterity saving throw, taking 21 ({@damage 2d12+8}) piercing damage, being pushed with The Thunderjaw and knocked {@condition prone} on a failed save."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Immutable Form",
+                "Magic Resistance",
+                "Magic Weapons"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "damageTags": [
+                "B",
+                "F",
+                "N",
+                "P"
+            ],
+            "miscTags": [
+                "MW",
+                "RW",
+                "AOE"
+            ],
+            "shortName": true,
+            "trait": [
+                {
+                    "name": "Immutable form.",
+                    "entries": [
+                        "The Thunderjaw is immune to any spell or effect that would alter its form."
+                    ]
+                },
+                {
+                    "name": "Magic Resistance.",
+                    "entries": [
+                        "The Thunderjaw has advantage on saving throws against spells and other magical effects."
+                    ]
+                },
+                {
+                    "name": "Magic Weapons.",
+                    "entries": [
+                        "The Thunderjaw's weapon attacks are magical."
+                    ]
+                },
+                {
+                    "name": "Bioelectric Organelle",
+                    "entries": [
+                        "If the Kinetic Plates are down, a new option of combat is available.",
+                        "If the Thunderjaw is affected by electric damage, it must make a concentration saving throw or loose the trait 'Magic Resistance' for 1 minute."
+                    ]
+                }
+            ],
+            "environment": [
+                "desert",
+                "grassland",
+                "urban"
+            ],
+            "alias": [
+                "Thunder",
+                "Jaw",
+                "Tirânico"
+            ],
+            "tokenUrl": "https://i.imgur.com/CoLQUD9.png",
+            "skill": {
+                "perception": "+8",
+                "athletics": "+14"
+            },
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "fluff": {
+                "entries": [
+                    "The Thunderjaw is a huge bipedal machine with features akin to those of a theropod dinosaur, particularly the Tyrannosaurus Rex: powerful and bulky legs, a long body, and a heavy tail to maintain equilibrium. ",
+                    "As its name suggests, the head of the Thunderjaw features two sets of appendages resembling mandibles that spread to the sides when it roars. Its visual sensor array is composed of six sensors on each side of the head, arranged in a staggered vertical configuration of three side by side. Twin cannons are affixed to the sides of its mandibles, one on each side. There is an additional energy beam weapon in its mouth. An array of Blaze canisters is on its back, heavily protected by armor plating. Under its belly is an array of similarly protected Chillwater canisters. Attached to each hip is a weapon known as a Disc Launcher. On its lower back are three long, antenna-like structures. The tip of its tail is armed with a pair of scythe-like fins, used in combat when the Thunderjaw swings its tail.",
+                    "The Thunderjaw seems to be a much larger and more combat-oriented cousin of the Watcher, as both resemble theropod dinosaurs, have no forelimbs, a long tail, and scanning equipment in their heads."
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https://cdna.artstation.com/p/assets/images/images/015/910/268/large/alessandra-nardi-divorax.jpg?1550138840"
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+    }

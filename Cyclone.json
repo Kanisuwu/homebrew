@@ -1,0 +1,641 @@
+{
+	"yaml.schemas": {
+		"https://json-schema.org/draft/2020-12/schema": ["my.schema.json"]
+	  },
+	"_meta": {
+		"sources": [
+			{
+				"json": "Cyclone",
+				"abbreviation": "Cyl",
+				"full": "Cyclone",
+				"authors": [
+					"Kanisu"
+				],
+				"version": "1.0",
+				"convertedBy": [
+					"Kanisu"
+				]
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0,
+		"_dateLastModifiedHash": "62820529fa"
+	},
+	"race": [
+		{
+			"name": "Sealing",
+			"source": "Cyclone",
+			"page": 5,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30,
+				"swim": true
+			},
+			"resist":[
+				"acid"
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"skillProficiencies": [
+				{"perception": true}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Acidic Spit",
+					"entries": [
+						"You have the ability to spit acid. The target make a Dexterity saving throw (DC 8 + Constitution + your proficiency bonus). In a fail, takes acid damage equal to {@damage 1d6} + your Constitution modifier. In addition, if the target is wearing armor or carrying equipment made of metal or other susceptible materials, the acid corrodes it, causing it to gain a -1 modifier (At maximum of -2).",
+						"You can use this trait a number of times equal to your proficiency bonus and regain all expended uses after a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Amphibious",
+					"entries": [
+						"You breathe air and water."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Acid Resistance",
+					"entries": [
+						"You have resistance to acid damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Aquatic Grace",
+					"entries": [
+						"You have proficiency in {@skill acrobatics}, you use this skill instead of athletics checks and use this skill as expertise if underwater."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tail",
+					"entries": [
+						"Your tail is extremely flexible, capable of holding itens and interacting with the enviroment. You can {@action use an object} with your tail freely once per turn."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"With a facial structure seeming a scaleless ophidian, these creatures are extremely well adapted to aquatic enviroments. They are bipedal creatures which walk on their tiptoes, those who seems to have tissue between the fingers, generaly used to swim. Their tail helps to this due to it's flexibility and some 'fins' at the end.",
+					"They do not have horns, instead have fins and 'antenna-like' members in their head."
+				]
+			}
+		},
+		{
+			"name": "Gasleafer",
+			"source": "Cyclone",
+			"page": 6,
+			"lineage": "VRGR",
+			"speed": {
+				"walk": 30,
+				"climb": true
+			},
+			"size": [
+				"M"
+			],
+			"skillProficiencies":[
+				{"persuasion":true}
+			],
+			"entries":[
+				{
+					"type": "entries",
+					"name": "Peaceful",
+					"entries": [
+						"You have a calming presence that makes others less likely to see you as a threat. Creatures are less likely to attack you if you have not attacked them or their allies. This does not apply to creatures that are inherently hostile or have a strong reason to attack you. Additionally, you have advantage on Charisma checks made to avoid combat or deescalate tense situations."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Camouflage",
+					"entries":[
+						"You have advantage in {@skill stealth} when hiding in obscured areas by foliage and junk. If you stay at least one minute in heavy foliage you becomes {@condition invisible} until you move or make an action."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Photosynthesis",
+					"entries":[
+						"You can use your connection to sunlight to replenish your energy. You can enter a meditative state and spend 10 minutes in direct sunlight once per short rest. When you do so, you regain hit points equal to your level + Constitution modifier for 1 hour.",
+						"After a long rest, a number equal to your proficiency bonus of small berries grow into your body. Eating a berry grants you temporary hit points equal to your your Wisdom modifier + proficiency bonus, which last for 1 hour."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Natural Diplomat",
+					"entries":[
+						"You have proficiency in the {@skill persuasion} skill."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tail",
+					"entries": [
+						"Your tail is extremely flexible, capable of holding itens and interacting with the enviroment. You can {@action use an object} with your tail freely once per turn."
+					]
+				}
+			],
+			"fluff":{
+				"entries": [
+					"Gasleafers are green humanoid ophidians with a skin that holds a combination of different tones of green and specialized photo-receptor organs that mimic the appearance and function of a leaf. These organs are present in the head, arms, shoulders, thighs, tail and sometimes nose. These creatures are famous to be peaceful, kind and key for survival because they can grow a set of small healthy seedless fruits in their heads.",
+					"They are difficult to locate since their appearance is actually a way to camouflage through their homeland: Junkforest."
+				]
+			}
+
+		},
+		{
+			"name": "Flamethrower",
+			"source": "Cyclone",
+			"page": 7,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed": {
+				"walk": 30
+			},
+			"resist": [
+				"fire"
+			],
+			"skillProficiencies": [
+				{"athletics":true}
+			],
+			"entries":[
+				{
+					"type": "entries",
+					"name": "Combat Adept",
+					"entries": [
+						"You body has adapted to combat more than anyone else. As an action, you can choose one of this damage types: 'Bludgeoning, Piercing or Slashing', you can subtract your proficiency bonus from the damage type you take for 1 minute.",
+						"You can do this a number of times equal to your proficiency bonus and regain all expanded uses after a long rest."
+					]
+				},
+
+				{
+					"type": "entries",
+					"name": "Lit Up",
+					"entries": [
+						"You can lit the tip of your antennas as a reaction when you take damage. When you lit up, you gain temporary hit points equal to 2 × your proficiency bonus + Constitution modifier until the end of a short rest. In addition, all of your melee attacks deal fire damage.",
+						"You can do this once per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Fire Resistance",
+					"entries": [
+						"You have resistance to fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Strength Adept",
+					"entries":[
+						"You have proficiency in {@skill athletics}. Additionaly when you make a Strength ({@skill athletics}) check, you can reroll any check once per short rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tail",
+					"entries": [
+						"Your tail is extremely flexible, capable of holding itens and interacting with the enviroment. You can {@action use an object} with your tail freely once per turn."
+					]
+				}
+			],
+			"fluff":{
+				"entries": [
+					{
+						"type":"section",
+						"entries":[
+							{
+								"type": "entries",
+								"entries": [
+									"Flamethrowers are humanoid ophidian creatures who lives in desert-like biomes, with giant skycrappers and dangerous machines.",
+								{
+									"type": "entries",
+									"name": "Main Characteristics",
+									"entries": [
+										"Living in hot channels of cities and plains of abandoned farms where death made of steel and flesh can be from any direction, these creatures adapted to rip and tear.",
+										"Having a lot of antenna-like organs who functions as temperature exchangers, their clean skin color is wheat-like and the tips of the antennas have a different crimson tone. Their facial structure is basically equal to the others such as sealings and gasleafers."
+									]
+								},
+								{
+									"type":"entries",
+									"name":"Culture",
+									"entries":[
+										"Living in harsh conditions, they developed immense new ways of living, such as artists, dancers, chefs, artificers and of course: drugs. Having an incredibly sense of danger, they are great strategist and hunters, capable of taking down even combat class machines. Festivals of fire and duels are engaged and highly appreciated among them. Outsiders can see this race as a barbarian, but advanced politics, cultural development and commerce is extremely observable and present in their society.",
+										"Talking about commerce: Flamethrowers are curious and happy to engage in the weapon's market. They are excellent smiths, creating the most pure steel or the best explosive ever wanted. They are also great at clothing, making nice dresses for their dancers and local leaders."
+									]
+								},
+								{
+									"type":"entries",
+									"name": "Hierarchy",
+									"entries":[
+										"Flamethrowers have a matriarch society, having the female as main leaders since males always are in constant danger and hunting. Generally, females are administrators, directors and other high-staff roles. Males are generally workers, army and generals.",
+										"Do not be fooled, they 'generally' follow these rules. There's cases that the female is a general and the male is a logistic leader, depends on the needs."
+									]
+								}
+								]
+							}	
+						]
+					}
+				]
+			}
+		},
+		{
+			"name": "Megawatt",
+			"source": "Cyclone",
+			"page": 8,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed":{
+				"walk": 40
+			},
+			"resist":[
+				"lightning"
+			],
+			"skillProficiencies":[
+				{"acrobatics":true}
+			],
+			"entries":[
+				{
+					"type": "entries",
+					"name": "Lightning Dash",
+					"entries": [
+						"As a bonus action, you can dash 40-feet long, escaping {@condition grappled} condition and opportunity attacks can't be made on you. Additionally, when you use this trait and dash into the direction of a creature you hit it. The creature must make a Strength saving throw (DC 8 + Dexterity modifier + your proficiency bonus) or take {@damage 1d6} + Dexterity modifier as bludgeoning damage and will be pushed with you, if success it takes half damage. If there's a wall or other creature behind it, it takes an additional {@damage d6}.",
+						"You can use this feature a number of times equal to your proficiency bonus and regain all expended uses after a long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Radiothrophic",
+					"entries": [
+						"As an action, you can start to disrupt any magical effect in 30 feet of you for a number of rounds equal to your proficiency bonus. Any creature who cast a spell or have magical effects must make a concentration check or loose it's effects, independently if was a concentration spell or not. The creature must make a check to maintain the spell in each start of it's turn inside the area.",
+						"You can use this once per long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lightning Resistance",
+					"entries": [
+						"You have resistance to lightning damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Blue Bless",
+					"entries": [
+						"You have a walking speed of 40 feet. Additionally, you have proficiency in Dexterity ({@skill acrobatics}) and can once per long rest choose to 'take ten' instead of rolling."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tail",
+					"entries": [
+						"Your tail is extremely flexible, capable of holding itens and interacting with the enviroment. You can {@action use an object} with your tail freely once per turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Marshmallow",
+			"source": "Cyclone",
+			"page": 9,
+			"lineage": "VRGR",
+			"size": [
+				"M"
+			],
+			"speed":{
+				"walk": 30
+			},
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Uncanny Tongue",
+					"entries": [
+					"Your tongue is strangely designed. Your tongue has reach 20 ft. and is considered a new limb. You can touch, grapple and other actions that you normally do with your hands."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Lucky",
+					"entries": [
+						"You can choose to reroll any rolled dice once per short rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Simplicity",
+					"entries": [
+						"You have advantage in saving throws against being charmed or frightned."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Multi-cultured",
+					"entries": [
+						"Your people is not adept to only one art, they have multiple different ones. Choose two any skill proficiencies and one artisan's tools proficiency."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tail",
+					"entries": [
+						"Your tail is extremely flexible, capable of holding itens and interacting with the enviroment. You can {@action use an object} with your tail freely once per turn."
+					]
+				}
+			]
+		}
+	],
+	"foundryRaceFeature": [
+		{
+			"name": "Combat Adept",
+			"source": "Cyclone",
+			"raceName": "Flamethrower",
+			"raceSource": "Cyclone",
+			"system": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"duration.value": 1,
+				"duration.units": "minute",
+				"uses.value": 2,
+				"uses.max": "@prof",
+				"uses.per": "sr"
+			}
+		},
+		{
+			"name":"Lit Up",
+			"source": "Cyclone",
+			"raceName": "Flamethrower",
+			"raceSource": "Cyclone",
+			"system": {
+				"activation.type": "reaction",
+				"activation.cost": 1,
+				"duration.value": 1,
+				"duration.units": "minute",
+				"uses.value": 1,
+				"uses.max": "1",
+				"uses.per": "lr"
+			}
+		},
+		{
+			"name": "Photosynthesis",
+			"source": "Cyclone",
+			"raceName": "Gasleafer",
+			"raceSource":"Cyclone",
+			"system": {
+				"activation.type": "minute",
+				"activation.cost": 10,
+				"uses.value": 1,
+				"uses.max": 1,
+				"uses.per": "sr"
+			}
+		},
+		{
+			"name": "Acidic Spit",
+			"source": "Cyclone",
+			"raceName": "Sealing",
+			"raceSource": "Cyclone",
+			"system": {
+				"activation.type": "action",
+				"activation.cost": 1,
+				"duration.units": "inst",
+				"target.value": 1,
+				"target.type": "creature",
+				"range.units": "ft",
+				"range.value": 15,
+				"uses.value": 2,
+				"uses.max": "@prof",
+				"uses.per": "lr",
+				"ability": "con",
+				"actionType": "save",
+				"save.ability": "dex",
+				"save.scaling": "con",
+				"damage.parts": [["1d6 + @mod", "acid"]]
+			}
+		},
+		{
+			"name": "Static Interference",
+			"source": "Cyclone",
+			"raceName": "Megawatt",
+			"raceSource": "Cyclone",
+			"system": {
+				"activation.cost": 1,
+				"activation.type": "action",
+				"duration.units": "round",
+				"range.units": "ft",
+				"range.value": 30,
+				"uses.value": 1,
+				"uses.max": 1,
+				"uses.per": "lr"
+
+			}
+		},
+		{
+			"name": "Lightning Dash",
+			"source": "Cyclone",
+			"raceName": "Megawatt",
+			"raceSource": "Cyclone",
+			"system": {
+				"activation.cost": 1,
+				"activation.type": "bonus",
+				"range.units": "ft",
+				"range.value": 40,
+				"uses.value": 2,
+				"uses.max": "@prof",
+				"uses.per": "lr",
+				"ability": "dex",
+				"actionType": "save",
+				"save.ability": "str",
+				"save.scaling": "dex",
+				"damage.parts": [["1d6 + @mod", "bludgeoning"]],
+				"damage.versatile": ""
+			}
+		},
+		{
+			"name": "Uncanny Tongue",
+			"source": "Cyclone",
+			"raceName": "Marshmallow",
+			"raceSource": "Cyclone",
+			"system": {
+				"range.units": "ft",
+				"range.value": 20
+			}
+		},
+		{
+			"name": "Lucky",
+			"source": "Cyclone",
+			"raceName": "Marshmallow",
+			"raceSource": "Cyclone",
+			"system": {
+				"uses.max": 1,
+				"uses.per": "sr"
+			}
+		}
+	],
+	"variantrule": [
+		{
+			"name": "Computronics for Spellcasting",
+			"source": "Cyl",
+			"page": 200,
+			"ruleType": "O",
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Storage for classes",
+					"page": 200,
+					"entries": [
+						"Here will be all the items for classes to use properly. Each class has it's own data storage with different tiers, which higher the tier, higher the capacity for storage.",
+						"Different classes needs different data storages and can use only their own components."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Spells known and Data",
+					"page": 0,
+					"entries": [
+						"You can spend at least 2 hours to code your equipment and change between spells known. You must be proficient in {@sense arcana} to do that.",
+						"You can also learn new spells through data gathering through the world."
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Devices for Data Storage",
+					"colLabels": [
+						"Device",
+						"Size",
+						"Rarity",
+						"Price"
+					],
+					"colStyles": [
+						"col- text-",
+						"col- text- "
+					],
+					"intro": [
+						"This table is used only for wizards and bards."
+					],
+					"outro": [
+						"Size is equal to the number of spells you can have."
+					],
+					"rows": [
+						[
+							"Selectron Tube",
+							"2",
+							"Common",
+							"200pc"
+						],
+						[
+							"Memory Disc",
+							"4",
+							"Common",
+							"800pc"
+						],
+						[
+							"Flash Drive",
+							"6",
+							"Uncommon",
+							"2000pc"
+						],
+						[
+							"SD Card",
+							"8",
+							"Uncommon",
+							"600pp"
+						],
+						[
+							"Hard Disk",
+							"12",
+							"Uncommon",
+							"400po"
+						],
+						[
+							"Solid State Drive",
+							"16",
+							"Rare",
+							"650po"
+						],
+						[
+							"NVMe",
+							"20",
+							"Rare",
+							"1000po"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "Devices for processing Data",
+					"colLabels": [
+						"Device",
+						"Processing",
+						"Rarity",
+						"Price"
+					],
+					"colStyles": [
+						"col- text-",
+						"col- text- "
+					],
+					"intro": [
+						"This devices only work on: Sorcerer; Necromancer; Investigator; Witch and Warlock."
+					],
+					"outro": [
+						"Processing power is equal to the number of spells you can have."
+					],
+					"rows": [
+						[
+							"CPU 4-Bit",
+							"1",
+							"Common",
+							"300pc"
+						],
+						[
+							"CPU 8-Bit",
+							"2",
+							"Common",
+							"950pc"
+						],
+						[
+							"CPU 16-Bit",
+							"4",
+							"Uncommon",
+							"2300pc"
+						],
+						[
+							"CPU 32-Bit",
+							"6",
+							"Uncommon",
+							"900pp"
+						],
+						[
+							"CPU 64-Bit",
+							"8",
+							"Uncommon",
+							"500po"
+						],
+						[
+							"APU 64-Bit",
+							"10",
+							"Rare",
+							"760po"
+						],
+						[
+							"APU x86-64-Bit",
+							"12",
+							"Rare",
+							"1300po"
+						]
+					],
+					"footnotes": [
+						"Optional Footer"
+					]
+				}
+			]
+		}
+	]
+}
