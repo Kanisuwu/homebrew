@@ -1,0 +1,33 @@
+let target = Array.from(game.user.targets)[0]
+
+if (Tagger.hasTags(target, "SHIELDED")){
+    await Tagger.removeTags(target, "SHIELDED")
+    await Sequencer.EffectManager.endEffects({name: "Ice Shield", object: target})
+    } else {
+    await Tagger.addTags(target, "SHIELDED")
+    new Sequence()
+        .effect()
+            .name("Impulse")
+            .atLocation(target)
+            .attachTo(target)
+            .file("jb2a.extras.tmfx.inpulse.circle.01.normal")
+            .belowTokens()
+            .waitUntilFinished(-700)
+        .effect()
+            .name("Ice Shield")
+            .file("jb2a.particles.outward.blue.01.03")
+            .attachTo(target)
+            .atLocation(target)
+            .fadeIn(600, {ease: "easeOutCubic"})
+            .scaleToObject(1)
+            .persist()
+        .effect()
+            .name("Ice Shield")
+            .atLocation(target)
+            .attachTo(target)
+            .fadeIn(600, {ease: "easeOutCubic"})
+            .scaleToObject(2)
+            .file("jb2a.shield_themed.above.ice.01.blue")
+            .persist()
+    .play()
+}
